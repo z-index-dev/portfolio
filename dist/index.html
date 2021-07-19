@@ -7,18 +7,15 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
-<body id="bg-img">
+<body>
   <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-
     <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
+
       <ul class="menu-nav">
         <li class="nav-item current">
           <a href="index.html" class="nav-link">
@@ -27,41 +24,63 @@
         </li>
         <li class="nav-item">
           <a href="about.html" class="nav-link">
-            About Me
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="work.html" class="nav-link">
-            My Work
+            Projects
           </a>
         </li>
         <li class="nav-item">
           <a href="contact.html" class="nav-link">
-            How to Reach Me
+            Contact
           </a>
         </li>
       </ul>
     </nav>
+    <div class="scroll-prompt js-scroll fade-in-bottom">
+      <i class="fas fa-angle-double-down"></i>
+      Scroll
+    </div>
   </header>
 
-  <main id="home">
-    <h1 class="lg-heading">John <span class="text-secondary">Doe</span></h1>
-    <h2 class="sm-heading">Web Developer, Programmer, Designer &amp; Entrepreneur</h2>
+  <main id="home" class="home">
+    <div class="home-portrait">
+      <img src="https://picsum.photos/500" alt="">
+    </div>
+    <div class="home-content">
+      <h1 class="lg-heading">Zach <span class="text-secondary">Shelton</span></h1>
+      <h2 class="sm-heading">Self-taught web developer &amp; designer &bull; Houston, TX</h2>
+      <div class="icons">
+        <a href="#">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </main>
+  <div class="skewed"></div>
+  <article class="about">
+    <h2 class="about-heading">Hi! My name is Zach Shelton</h2>
+    <p class="about-text">I'm a self-taught, full-stack developer using HTML, CSS, JavaScript and Node.js to build responsive websites and applications.</p>
+    <p class="about-text">I am currently the Digital Development Manager for the Houston Rockets 🚀🏀, handling all development and design of Rockets.com, the Rockets App and RocketsShop.com. I've worked there for over eight years now, drawing on my background in professional writing, event management and graphic design to deliver a high-end experience to our fans.</p>
+    <p class="about-text">I'm always looking for a new challenge or project, so feel free to hit me up on one the platforms below or just fill out my <a href="/contact.html">contact form</a>!</p>
     <div class="icons">
+      <a href="#">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
       <a href="#">
         <i class="fab fa-twitter fa-2x"></i>
       </a>
       <a href="#">
-        <i class="fab fa-facebook fa-2x"></i>
-      </a>
-      <a href="#">
         <i class="fab fa-linkedin fa-2x"></i>
       </a>
-      <a href="#">
-        <i class="fab fa-github fa-2x"></i>
-      </a>
     </div>
-  </main>
+  </article>
+  <footer id="main-footer">
+    Copyright &copy; Z-Index Web Services, LLC 2021
+  </footer>
 
   <script src="js/main.js"></script>
 </body>
