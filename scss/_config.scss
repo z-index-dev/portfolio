@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto+Slab:wght@400;500;600&display=swap');
 
-$primary-color: #293241;
-$secondary-color: #82afdc;
-$tertiary-color: #0d1926;
-$primary-text: #fff;
-$show-home-image: true;
-$home-image: url(../img/background.jpg);
-$background-opacity: .9;
+// $primary-color: #293241;
+// $secondary-color: #82afdc;
+// $tertiary-color: #0d1926;
+// $primary-text: #fff;
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$tertiary-color: var(--tertiary-color);
+$accent-color: var(--accent-color);
+$primary-color-dark: var(--primary-color-dark);
+$primary-text: var(--primary-text);
 $sans-serif: 'Inter', sans-serif;
 $serif: 'Roboto Slab', serif;
 
@@ -37,13 +40,13 @@ $serif: 'Roboto Slab', serif;
 // }
 
 // Set text color
-@function set-text-color($color) {
-  @if (lightness($color) > 40) {
-    @return #000000;
-  } @else {
-    @return #fff;
-  }
-}
+// @function set-text-color($color) {
+//   @if (lightness($color) > 40) {
+//     @return #000000;
+//   } @else {
+//     @return #fff;
+//   }
+// }
 
 // Media query mixins
 @mixin mediaSm {

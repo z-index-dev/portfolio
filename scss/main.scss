@@ -7,9 +7,45 @@
   padding: 0;
 }
 
+:root, :root.dark {
+  --primary-color: #293241;
+  --secondary-color: #82afdc;
+  --tertiary-color: #0d1926;
+  --accent-color: #EE6C4D;
+  --primary-color-dark: #1f2631;
+  --primary-text: #fff;
+}
+
+:root.light {
+  --primary-color: #fefefe;
+  --secondary-color: #6B705C;
+  --tertiary-color: #0d1926;
+  --accent-color: #A5A58D;
+  --primary-color-dark: #e5e5e5;
+  --primary-text: #0A0908;
+}
+
+:root.fun {
+  --primary-color: #133e7c;
+  --secondary-color: #ea00d9;
+  --tertiary-color: #0d1926;
+  --accent-color: #711c91;
+  --primary-color-dark: #091833;
+  --primary-text: 	#0abdc6;
+}
+
+:root.experiment {
+  --primary-color: #7a04eb;
+  --secondary-color: #ff124f;
+  --tertiary-color: #0d1926;
+  --accent-color: #ff00a0;
+  --primary-color-dark: #120458;
+  --primary-text: #fff;
+}
+
 body {
-  background-color: darken($primary-color, 5%);
-  color: set-text-color($primary-color);
+  background-color: $primary-color-dark;
+  color: $primary-text;
   height: 100vh;
   margin: 0;
   font-family: $sans-serif;
@@ -28,11 +64,11 @@ body {
   justify-content: flex-end;
   list-style-type: none;
   padding: 1rem .5rem 1rem 0;
-  background-color: darken($primary-color, 5%);
+  background-color: $primary-color-dark;
   z-index: 10;
 
   .nav-link {
-    color: #fff;
+    color: $primary-text;
     font-family: $serif;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -48,14 +84,14 @@ body {
 }
 
 .nav-item:hover .nav-link {
-  color: darken(#fff, 50%);
+  filter: brightness(50%);
 }
 
 .nav-item.current .nav-link:before {
   content: "";
   z-index: -1;
   position: absolute;
-  background-color: $secondary-color;
+  background-color: $accent-color;
   bottom: 0;
   left: 0;
   right: 0;
@@ -137,7 +173,7 @@ body {
   margin-top: 1rem;
 
   a {
-    color: #fff;
+    color: $primary-text;
     will-change: transform;
     transition: all ease .25s;
 
@@ -184,12 +220,12 @@ body {
     margin: .5rem 0;
 
     a {
-      color: #fff;
+      color: $accent-color;
       transition: all ease .25s;
     }
 
     a:hover {
-      color: darken(#fff, 50%);
+      filter: brightness(125%);
     }
   }
 
