@@ -33,7 +33,19 @@
 // }
 
 const scrollPrompt = document.querySelector('.scroll-prompt');
+const themeCog = document.querySelector('.theme-cog');
+const themeMenu = document.querySelector('.theme-menu');
+const themeButtons = [...document.querySelectorAll('.theme-select')];
 let lastScrollTop = 0;
+
+function toggleThemeMenu(e) {
+  themeMenu.classList.toggle('visible');
+}
+
+function setTheme(className) {
+  var root = document.getElementsByTagName('html')[0];
+  root.className = className;
+}
 
 function displayScrollPrompt() {
   scrollPrompt.classList.add('scrolled');
@@ -47,6 +59,24 @@ function hideScrollPrompt() {
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
 }
 
-setTimeout(displayScrollPrompt(), 1000);
+
+themeCog.addEventListener('click', toggleThemeMenu);
+themeButtons.forEach(button => {
+  button.addEventListener('click', e => {
+    if (e.target.classList.contains('light')) {
+      return setTheme('light');
+    };
+
+    if (e.target.classList.contains('dark')) {
+      return setTheme('dark');
+    };
+
+    if (e.target.classList.contains('fun')) {
+      return setTheme('fun');
+    };
+  });
+});
 
 window.addEventListener('scroll', hideScrollPrompt, true);
+
+setTimeout(displayScrollPrompt(), 1000);

@@ -7,7 +7,7 @@
   padding: 0;
 }
 
-:root, :root.dark {
+:root, :root.dark, .theme-select.dark {
   --primary-color: #293241;
   --secondary-color: #82afdc;
   --tertiary-color: #0d1926;
@@ -16,7 +16,7 @@
   --primary-text: #fff;
 }
 
-:root.light {
+:root.light, .theme-select.light {
   --primary-color: #fefefe;
   --secondary-color: #6B705C;
   --tertiary-color: #0d1926;
@@ -25,7 +25,7 @@
   --primary-text: #0A0908;
 }
 
-:root.fun {
+:root.fun, .theme-select.fun {
   --primary-color: #133e7c;
   --secondary-color: #ea00d9;
   --tertiary-color: #0d1926;
@@ -63,8 +63,9 @@ body {
   align-items: center;
   justify-content: flex-end;
   list-style-type: none;
-  padding: 1rem .5rem 1rem 0;
+  padding: 1rem 2rem 1rem 0;
   background-color: $primary-color-dark;
+  box-shadow: 2px 2px 16px $primary-color-dark;
   z-index: 10;
 
   .nav-link {
@@ -76,6 +77,64 @@ body {
     text-align: center;
     margin: 0 1.5rem;
     transition: all ease .25s;
+  }
+}
+
+.theme-cog {
+  transform: rotate(-90deg);
+  transition: transform ease .5s;
+}
+
+.theme-cog:hover {
+  cursor:pointer;
+  filter: brightness(50%);
+  transform: rotate(90deg);
+  transition: transform ease .5s;
+}
+
+// Might need an animation for this
+.theme-menu {
+  opacity: 0;
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: $primary-color-dark;
+  padding: .5rem 1rem;
+  box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: .5);
+  z-index: 20;
+  transform: translateX(200%);
+  transition: transform ease .5s;
+}
+
+.theme-menu.visible {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: transform ease .5s;
+
+  .theme-select {
+    width: 6rem;
+    padding: .5rem;
+    margin: .4rem 0;
+    background: linear-gradient(90deg, $primary-color 20%, $secondary-color 40%, $accent-color 60%, $primary-color-dark 80%);
+    color: $primary-text;
+    border-radius: .5rem;
+    border: 1px solid $secondary-color;
+    font-family: $serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba($color: #000000, $alpha: .2);
+    text-transform: uppercase;
+    will-change: transform;
+    transition: filter ease .5s;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(80%);
+    }
   }
 }
 
@@ -221,7 +280,7 @@ body {
 
     a {
       color: $accent-color;
-      transition: all ease .25s;
+      transition: filter ease .25s;
     }
 
     a:hover {
