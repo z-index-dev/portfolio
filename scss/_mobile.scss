@@ -1,11 +1,25 @@
 // Wide screens
 @include mediaXl {
+  .home img {
+    height: 350px;
+    width: 350px;
+  }
 
+  .home .lg-heading {
+    font-size: 4rem;
+  }
+
+  .home .sm-heading {
+    font-size: 2rem;
+  }
 }
 
 // Desktops and Laptops
 @include mediaLg {
-
+  .home img {
+    height: 350px;
+    width: 350px;
+  }
 }
 
 // Tablets and small Laptops

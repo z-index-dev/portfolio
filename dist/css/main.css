@@ -208,7 +208,8 @@ body {
 
 .sm-heading {
   font-family: "Roboto Slab", serif;
-  font-weight: 500; }
+  font-weight: 500;
+  font-size: 1.5rem; }
 
 .icons {
   width: 10rem;
@@ -267,6 +268,20 @@ body {
   background: var(--primary-color);
   text-align: center;
   padding: .5rem; }
+
+@media screen and (min-width: 1171px) {
+  .home img {
+    height: 350px;
+    width: 350px; }
+  .home .lg-heading {
+    font-size: 4rem; }
+  .home .sm-heading {
+    font-size: 2rem; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .home img {
+    height: 350px;
+    width: 350px; } }
 
 @media screen and (max-width: 768px) {
   .home {
