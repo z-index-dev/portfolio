@@ -10,10 +10,69 @@
 
 // Tablets and small Laptops
 @include mediaMd {
+  .home {
+    padding: 2rem;
+    gap: 3rem;
+    height: 70%;
+  }
 
+  .skewed {
+    height: 70%;
+  }
+
+  .about {
+    margin: 3rem;
+  }
 }
 
 // Smartphones
 @include mediaSm {
+  .menu-nav {
+    right: -100%;
+    flex-direction: column;
+    padding: 1rem 0 .25rem 0;
 
+    .nav-item {
+      margin: 0 0 .5rem 0;
+    }
+
+    .nav-item.theme-cog {
+      font-size: 1.5rem;
+    }
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-nav.active {
+    right: 0;
+  }
+
+  .theme-menu {
+    top: 11rem;
+    right: .5rem;
+  }
+
+  .theme-menu.visible .theme-select {
+    width: 10rem;
+  }
+
+  .home {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 1rem;
+
+    .lg-heading {
+      line-height: 1.2;
+    }
+  }
+
+  .skewed {
+    height: 90%;
+  }
+
+  .about {
+    margin: 4rem 0;
+  }
 }

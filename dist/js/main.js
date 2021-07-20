@@ -32,13 +32,22 @@
 // 	}
 // }
 
+const menuBtn = document.querySelector('.menu-btn');
 const scrollPrompt = document.querySelector('.scroll-prompt');
 const themeCog = document.querySelector('.theme-cog');
 const themeMenu = document.querySelector('.theme-menu');
 const themeButtons = [...document.querySelectorAll('.theme-select')];
 let lastScrollTop = 0;
 
-function toggleThemeMenu(e) {
+function toggleMenuBtn() {
+  const menuNav = document.querySelector('.menu-nav');
+
+  menuBtn.classList.toggle('close');
+  menuNav.classList.toggle('active');
+  themeMenu.classList.remove('visible');
+}
+
+function toggleThemeMenu() {
   themeMenu.classList.toggle('visible');
 }
 
@@ -59,7 +68,7 @@ function hideScrollPrompt() {
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
 }
 
-
+menuBtn.addEventListener('click', toggleMenuBtn);
 themeCog.addEventListener('click', toggleThemeMenu);
 themeButtons.forEach(button => {
   button.addEventListener('click', e => {

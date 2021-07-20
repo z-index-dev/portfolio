@@ -1,18 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto+Slab:wght@400;500;600&display=swap");
 .menu-btn {
   display: none;
-  position: absolute;
-  z-index: 3;
-  right: 35px;
-  top: 35px;
+  position: fixed;
+  z-index: 25;
+  right: 1rem;
+  top: 1rem;
   cursor: pointer;
   transition: all .5s ease-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: var(--primary-text);
     transition: all .5s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
 
 * {
   box-sizing: border-box;
@@ -72,7 +80,8 @@ body {
   padding: 1rem 2rem 1rem 0;
   background-color: var(--primary-color-dark);
   box-shadow: 2px 2px 16px var(--primary-color-dark);
-  z-index: 10; }
+  z-index: 10;
+  transition: all ease .5s; }
   .menu-nav .nav-link {
     color: var(--primary-text);
     font-family: "Roboto Slab", serif;
@@ -95,7 +104,7 @@ body {
 
 .theme-menu {
   opacity: 0;
-  position: absolute;
+  position: fixed;
   top: 4rem;
   right: 2rem;
   display: flex;
@@ -258,3 +267,42 @@ body {
   background: var(--primary-color);
   text-align: center;
   padding: .5rem; }
+
+@media screen and (max-width: 768px) {
+  .home {
+    padding: 2rem;
+    gap: 3rem;
+    height: 70%; }
+  .skewed {
+    height: 70%; }
+  .about {
+    margin: 3rem; } }
+
+@media screen and (max-width: 500px) {
+  .menu-nav {
+    right: -100%;
+    flex-direction: column;
+    padding: 1rem 0 .25rem 0; }
+    .menu-nav .nav-item {
+      margin: 0 0 .5rem 0; }
+    .menu-nav .nav-item.theme-cog {
+      font-size: 1.5rem; }
+  .menu-btn {
+    display: block; }
+  .menu-nav.active {
+    right: 0; }
+  .theme-menu {
+    top: 11rem;
+    right: .5rem; }
+  .theme-menu.visible .theme-select {
+    width: 10rem; }
+  .home {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 1rem; }
+    .home .lg-heading {
+      line-height: 1.2; }
+  .skewed {
+    height: 90%; }
+  .about {
+    margin: 4rem 0; } }
