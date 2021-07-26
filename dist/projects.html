@@ -9,85 +9,56 @@
 </head>
 <body>
   <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-
     <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
-      </div>
-      <ul class="menu-nav">
+      <ul class="menu-nav active">
         <li class="nav-item">
           <a href="index.html" class="nav-link">
             Home
           </a>
         </li>
-        <li class="nav-item ">
-          <a href="about.html" class="nav-link">
-            About Me
-          </a>
-        </li>
         <li class="nav-item current">
-          <a href="work.html" class="nav-link current">
-            My Work
+          <a href="projects.html" class="nav-link">
+            Projects
           </a>
         </li>
         <li class="nav-item">
           <a href="contact.html" class="nav-link">
-            How to Reach Me
+            Contact
           </a>
         </li>
+        <li class="nav-item theme-cog">
+          <i class="fas fa-cog"></i>
+        </li>
       </ul>
+      <div class="menu-btn close">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
     </nav>
+    <!-- <div class="scroll-prompt js-scroll fade-in-bottom">
+      <i class="fas fa-angle-double-down"></i>
+      Scroll
+    </div> -->
+    <div class="theme-menu">
+      <button class="theme-select dark" aria-label="Set dark theme">Dark</button>
+      <button class="theme-select light" aria-label="Set light theme">Light</button>
+      <button class="theme-select fun" aria-label="Set fun theme">Fun</button>
+    </div>
   </header>
 
-  <main id="work">
-    <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
-    <h2 class="sm-heading">Check out some of my work...</h2>
-    <div class="projects">
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project1.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light"><i class="fas fa-eye"></i> Project</a>
-        <a href="#" class="btn-dark"><i class="fab fa-github"></i> Github</a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project5.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light"><i class="fas fa-eye"></i> Project</a>
-        <a href="#" class="btn-dark"><i class="fab fa-github"></i> Github</a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project2.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light"><i class="fas fa-eye"></i> Project</a>
-        <a href="#" class="btn-dark"><i class="fab fa-github"></i> Github</a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project3.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light"><i class="fas fa-eye"></i> Project</a>
-        <a href="#" class="btn-dark"><i class="fab fa-github"></i> Github</a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project3.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light"><i class="fas fa-eye"></i> Project</a>
-        <a href="#" class="btn-dark"><i class="fab fa-github"></i> Github</a>
-      </div>
-    </div>
+  <main id="projects" class="projects">
+    Rockets Rewards - Front End
+    Rockets Rewards - Back End
+    Pomodoro App
+    Video background - Traversy
+    Pig Game (?)
+    Video Player - Wes Bos
+    Audio Player - Traversy
   </main>
-  
+  <div class="skewed"></div>
   <footer id="main-footer">
-    Copyright &copy; 2021
+    Copyright &copy; Z-Index Web Services, LLC 2021
   </footer>
 
   <script src="js/main.js"></script>
