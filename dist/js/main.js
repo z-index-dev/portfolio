@@ -23,10 +23,10 @@ function getTheme() {
   root.className = theme;
 }
 
-function setTheme(className) {
+function setTheme(theme) {
   let root = document.getElementsByTagName('html')[0];
-  root.className = className;
-  localStorage.setItem('theme', className);
+  root.className = theme;
+  localStorage.setItem('theme', theme);
 }
 
 function displayScrollPrompt() {
