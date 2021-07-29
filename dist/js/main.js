@@ -23,9 +23,9 @@ function getTheme() {
   root.className = theme;
 }
 
-function setTheme(theme) {
+function setTheme(className) {
   let root = document.getElementsByTagName('html')[0];
-  root.className = theme;
+  root.className = className;
   localStorage.setItem('theme', className);
 }
 
