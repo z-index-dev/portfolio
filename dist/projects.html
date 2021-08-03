@@ -36,10 +36,6 @@
         <div class="btn-line"></div>
       </div>
     </nav>
-    <!-- <div class="scroll-prompt js-scroll fade-in-bottom">
-      <i class="fas fa-angle-double-down"></i>
-      Scroll
-    </div> -->
     <div class="theme-menu">
       <button class="theme-select dark" aria-label="Set dark theme">Dark</button>
       <button class="theme-select light" aria-label="Set light theme">Light</button>
@@ -47,25 +43,24 @@
     </div>
   </header>
 
-  <!-- Remove projects wrapper and put all of this in a grid -->
   <main id="projects" class="projects">
     <div class="description">
       <h1 class="lg-heading">Projects</h1>
-      <p>I've built hundreds of webpages and applications over the course of my career. Below are some that show the best of my abilities with HTML, CSS, JavaScript, Node.js and modern databases.</p>
+      <p>I've built hundreds of webpages and applications over the course of my career. Below are some that show the best of my abilities with HTML, CSS, JavaScript, Node.js and modern databases. All of the front-end demos, including this site, are deployed to Netlify.</p>
     </div>
     <!-- Rockets Rewards - Front End -->
     <div class="project-card">
       <img src="https://d33wubrfki0l68.cloudfront.net/6102c19f325e8100072e903f/screenshot_2021-07-29-14-56-36-0000.png" alt="My Portfolio">
       <div class="project-content">
         <h2>My Portfolio</h2>
-        <p>I heard you like portfolios, so I put a portfolio in my portfolio. Deployed to Netlify with a theme switcher made using CSS variables/SCSS and localStorage. Have a look at the source code to see how it's done!</p>
+        <p>I heard you like portfolios, so I put a portfolio in my portfolio. Used this an opportunity to try out implementing a theme switcher, which ended up being much more straightforward than I thought with CSS/SCSS variables. Have a look at the source code to see how it's done!</p>
         <div class="project-links">
           <a href="#" class="project-link">View Code</a>
         </div>
       </div>
     </div>
     <div class="project-card">
-      <img src="https://d33wubrfki0l68.cloudfront.net/6102c19f325e8100072e903f/screenshot_2021-07-29-14-56-36-0000.png" alt="Rockets Rewards">
+      <img src="./img/20210803-rewards-portfolio-thumb.jpg" alt="Rockets Rewards">
       <div class="project-content">
         <h2>Rockets Rewards</h2>
         <p>Season Ticket Member Rewards redemption page built using HTML table, SCSS and Vanilla JS. Pulls account info via query string from REST API, which is fed from MongoDB through Node.js server hosted on Heroku. User then makes selections and submits to database pending server-side validation. Server also includes export function for viewing submissions and a "wake up" function so the server never lags. Project is currently live, but I'll share the server code when possible.</p>
@@ -77,7 +72,7 @@
     </div>
     <!-- Pomodoro App -->
     <div class="project-card">
-      <img src="https://d33wubrfki0l68.cloudfront.net/6102c19f325e8100072e903f/screenshot_2021-07-29-14-56-36-0000.png" alt="Rockets Rewards">
+      <img src="https://d33wubrfki0l68.cloudfront.net/61004cb310638800e51f6d08/screenshot_2021-07-27-18-13-13-0000.png" alt="Pomodoro App">
       <div class="project-content">
         <h2>Pomodoro App</h2>
         <p>Pomodoro timer with to-do list built with HTML, CSS and Vanilla JS, most notably using the setInterval and clearInterval methods, event bubbling and localStorage. If you like it, feel free to use it to keep you focused at work!</p>
@@ -89,17 +84,16 @@
     </div>
     <!-- Video Player -->
     <div class="project-card">
-      <img src="https://d33wubrfki0l68.cloudfront.net/6102c19f325e8100072e903f/screenshot_2021-07-29-14-56-36-0000.png" alt="Rockets Rewards">
+      <img src="https://d33wubrfki0l68.cloudfront.net/6101acb52a291f0007ff8179/screenshot_2021-07-28-19-15-08-0000.png" alt="Custom Video Player">
       <div class="project-content">
         <h2>Custom Video Player</h2>
-        <p>Pomordoro timer with to-do list built with HTML, CSS and Vanilla JS, most notably using the setInterval and clearInterval methods, event bubbling and localStorage. If you like it, feel free to use it to keep you focused at work!</p>
+        <p>HTML, CSS and Vanilla JS video player with scrubbing, time updates, time tooltips on hover and fullscreen capability. I initially built this as part of Wes Bos' JavaSript30 course then added the time tracker and tooltips with a timeString regex.</p>
         <div class="project-links">
           <a href="#" class="project-link">View Demo</a>
           <a href="#" class="project-link">View Code</a>
         </div>
       </div>
     </div>
-    <!-- Pig Game -->
   </main>
   <div class="skewed"></div>
   <footer id="main-footer">
