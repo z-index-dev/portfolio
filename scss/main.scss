@@ -14,6 +14,7 @@
   --accent-color: #EE6C4D;
   --primary-color-dark: #1f2631;
   --primary-text: #fff;
+  --inverted-text: #000;
 }
 
 :root.light, .theme-select.light {
@@ -23,6 +24,7 @@
   --accent-color: #A5A58D;
   --primary-color-dark: #e5e5e5;
   --primary-text: #0A0908;
+  --inverted-text: #fff;
 }
 
 :root.fun, .theme-select.fun {
@@ -31,7 +33,8 @@
   --tertiary-color: #0d1926;
   --accent-color: #711c91;
   --primary-color-dark: #091833;
-  --primary-text: 	#0abdc6;
+  --primary-text:#0abdc6;
+  --inverted-text: #091833;
 }
 
 :root.experiment {
@@ -41,6 +44,7 @@
   --accent-color: #ff00a0;
   --primary-color-dark: #120458;
   --primary-text: #fff;
+  --inverted-text: #000;
 }
 
 body {
@@ -261,7 +265,7 @@ body {
 .about {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: 1fr 8fr 1fr;
   place-content: center;
   z-index: 5;
   margin: 8rem 5rem;
@@ -293,6 +297,84 @@ body {
   .icons {
     grid-column: 2;
   }
+}
+
+.projects {
+  position: relative;
+  margin: 2rem;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  z-index: 5;
+
+  .description {
+    grid-column: 2/ -2;
+    margin: 2rem 0;
+
+    h1 {
+      font-family: $sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-family: $serif;
+    }
+  }
+}
+
+.project-card {
+  grid-column: 2 / -2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  border-bottom: solid 1px $accent-color;
+  border-width: 60%;
+
+  img {
+    width: 40%;
+  }
+
+  .project-content {
+    padding: 0 4rem;
+    width: 60%;
+
+    h2 {
+      margin-bottom: 1rem;
+      color: $secondary-color;
+      font-size: 2rem;
+    }
+    
+    p {
+      color: $primary-text;
+      font-size: 1.1rem;
+    }
+
+    .project-links {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      a {
+        color: $primary-text;
+        background-color: $primary-color;
+        padding: .5rem 1rem;
+        margin: 1rem 1rem 0 0;
+        text-decoration: none;
+        border: 1px solid $secondary-color;
+        transition: all .5s ease;
+
+        &:hover {
+          background-color: $secondary-color;
+          color: $inverted-text;
+        }
+      }
+    }
+  }
+}
+
+.project-card:last-child {
+  border-bottom: none;
 }
 
 #main-footer {
