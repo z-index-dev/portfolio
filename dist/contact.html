@@ -3,68 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Me</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
   <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-
     <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
-      </div>
       <ul class="menu-nav">
         <li class="nav-item">
           <a href="index.html" class="nav-link">
             Home
           </a>
         </li>
-        <li class="nav-item ">
-          <a href="about.html" class="nav-link">
-            About Me
-          </a>
-        </li>
         <li class="nav-item">
-          <a href="work.html" class="nav-link">
-            My Work
+          <a href="projects.html" class="nav-link">
+            Projects
           </a>
         </li>
         <li class="nav-item current">
           <a href="contact.html" class="nav-link">
-            How to Reach Me
+            Contact
           </a>
         </li>
+        <li class="nav-item theme-cog">
+          <i class="fas fa-cog"></i>
+        </li>
       </ul>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
     </nav>
+    <div class="theme-menu">
+      <button class="theme-select dark" aria-label="Set dark theme">Dark</button>
+      <button class="theme-select light" aria-label="Set light theme">Light</button>
+      <button class="theme-select fun" aria-label="Set fun theme">Fun</button>
+    </div>
   </header>
 
-  <main id="contact">
-    <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
-    <h2 class="sm-heading">This is how you can reach me...</h2>
-    <div class="boxes">
-      <div>
-        <span class="text-secondary">Email:</span>
-        johndoe@test.com
+  <main id="contact" class="contact">
+    <h1 class="lg-heading">Contact</h1>
+    <h2 class="sm-heading">If you'd like to talk about an upcoming project, need an extra hand on a current one or just want to talk shop, feel free to fill out the form below. I'm also reachable on Github, Twitter and LinkedIn should you prefer those platforms.</h2>
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="true">
+      <p class="hidden">
+        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+      </p>
+      <div class="wrap-input">
+        <input type="text" name="name" id="name" placeholder="Name">
+        <span class="focus-input"></span>
       </div>
-      <div>
-        <span class="text-secondary">Phone Number:</span>
-          (555) 555-5555
+      <div class="wrap-input">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <span class="focus-input"></span>
       </div>
-      <div>
-        <span class="text-secondary">Address:</span>
-        50 Main St. Boston, MA 02101
+      <div class="wrap-input">
+        <input type="text" name="subject" id="subject" placeholder="Subject (optional)">
+        <span class="focus-input"></span>
       </div>
+      <div class="wrap-input">
+        <textarea name="details" id="details" placeholder="Your Message"></textarea>
+        <span class="focus-input"></span>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+    <div class="icons">
+      <a href="#" title="Github">
+        <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+      </a>
+      <a href="#" title="Twitter">
+        <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+      </a>
+      <a href="#" title="LinkedIn">
+        <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+      </a>
     </div>
   </main>
-  
+  <!-- <div class="skewed"></div> -->
   <footer id="main-footer">
-    Copyright &copy; 2021
+    Copyright &copy; Z-Index Web Services, LLC 2021
   </footer>
 
   <script src="js/main.js"></script>
