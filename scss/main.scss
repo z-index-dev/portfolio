@@ -318,6 +318,7 @@ body {
 
     p {
       font-family: $serif;
+      font-size: 1.2rem;
     }
   }
 }
@@ -510,6 +511,30 @@ body {
   }
 }
 
+.success {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+  place-content: center;
+
+  .message {
+    grid-column: 3;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      text-align: left;
+
+      &:first-of-type {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
 .hidden {
   display: none;
 }
@@ -520,11 +545,6 @@ body {
   text-align: center;
   padding: .5rem;
 }
-
-// Dark mode test
-// html {
-//   filter: invert(1);
-// }
 
 @import 'mobile';
 

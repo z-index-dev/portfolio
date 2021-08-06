@@ -281,7 +281,8 @@ body {
       font-family: "Inter", sans-serif;
       margin-bottom: 1rem; }
     .projects .description p {
-      font-family: "Roboto Slab", serif; }
+      font-family: "Roboto Slab", serif;
+      font-size: 1.2rem; }
 
 .project-card {
   grid-column: 2 / -2;
@@ -405,6 +406,21 @@ body {
       .contact form input[type="submit"]:focus, .contact form input[type="submit"]:focus-within, .contact form input[type="submit"]:focus-visible {
         border: 1px dashed var(--accent-color);
         outline: none; }
+
+.success {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+  place-content: center; }
+  .success .message {
+    grid-column: 3; }
+    .success .message h1 {
+      text-align: center;
+      margin-bottom: 1rem; }
+    .success .message h2 {
+      text-align: left; }
+      .success .message h2:first-of-type {
+        margin-bottom: 1.5rem; }
 
 .hidden {
   display: none; }
