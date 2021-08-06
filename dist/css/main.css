@@ -466,7 +466,9 @@ body {
     .project-card .project-content {
       width: 100%;
       padding: 0;
-      margin-top: 2rem; } }
+      margin-top: 2rem; }
+  .contact form .wrap-input {
+    width: 100%; } }
 
 @media screen and (max-width: 500px) {
   .menu-nav {
