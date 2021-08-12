@@ -143,4 +143,14 @@
       }
     }
   }
+
+  .contact ~ #main-footer {
+    position: relative;
+  }
+}
+
+@media screen and (max-height: 790px) and (min-width: 768px) {
+  .contact ~ #main-footer {
+    opacity: 0;
+  }
 }

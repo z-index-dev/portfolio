@@ -426,12 +426,17 @@ body {
   display: none; }
 
 #main-footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background: var(--primary-color);
   text-align: center;
-  padding: .5rem; }
+  padding: .5rem;
+  z-index: 0; }
+
+.contact ~ #main-footer {
+  position: absolute;
+  bottom: 0;
+  opacity: 1;
+  transition: opacity .2s ease; }
 
 @media screen and (min-width: 1171px) {
   .home img {
@@ -510,4 +515,10 @@ body {
     .contact h2 {
       margin-right: .8rem; }
     .contact form .wrap-input {
-      width: 100%; } }
+      width: 100%; }
+  .contact ~ #main-footer {
+    position: relative; } }
+
+@media screen and (max-height: 790px) and (min-width: 768px) {
+  .contact ~ #main-footer {
+    opacity: 0; } }

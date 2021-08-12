@@ -540,12 +540,18 @@ body {
 }
 
 #main-footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background: $primary-color;
   text-align: center;
   padding: .5rem;
+  z-index: 0;
+}
+
+.contact ~ #main-footer {
+  position: absolute;
+  bottom: 0;
+  opacity: 1;
+  transition: opacity .2s ease;
 }
 
 @import 'mobile';
