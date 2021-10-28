@@ -454,7 +454,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .home {
-    padding: 2rem;
+    padding: 6.5rem 2rem 2rem;
     gap: 3rem;
     height: 70%; }
   .skewed {
