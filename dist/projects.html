@@ -1,118 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>View My Work</title>
-  <link rel="shortcut icon" href="./img/z-index-logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-</head>
-<body>
-  <header>
-    <nav class="menu">
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">
-            Home
-          </a>
-        </li>
-        <li class="nav-item current">
-          <a href="projects.html" class="nav-link">
-            Projects
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            Contact
-          </a>
-        </li>
-        <li class="nav-item theme-cog">
-          <i class="fas fa-cog"></i>
-        </li>
-      </ul>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View My Work</title>
+    <link
+      rel="shortcut icon"
+      href="./img/z-index-logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item current">
+            <a href="projects.html" class="nav-link"> Projects </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"> Contact </a>
+          </li>
+          <li class="nav-item theme-cog">
+            <i class="fas fa-cog"></i>
+          </li>
+        </ul>
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
+      </nav>
+      <div class="theme-menu">
+        <button class="theme-select dark" aria-label="Set dark theme">
+          Dark
+        </button>
+        <button class="theme-select light" aria-label="Set light theme">
+          Light
+        </button>
+        <button class="theme-select fun" aria-label="Set fun theme">Fun</button>
       </div>
-    </nav>
-    <div class="theme-menu">
-      <button class="theme-select dark" aria-label="Set dark theme">Dark</button>
-      <button class="theme-select light" aria-label="Set light theme">Light</button>
-      <button class="theme-select fun" aria-label="Set fun theme">Fun</button>
-    </div>
-  </header>
+    </header>
 
-  <main id="projects" class="projects">
-    <div class="description">
-      <h1 class="lg-heading">Projects</h1>
-      <p>I've built hundreds of webpages and applications over the course of my career. Below are some that show the best of my abilities with HTML, CSS, JavaScript, Node.js and modern databases. All of the front-end demos, including this site, are deployed to Netlify.</p>
-    </div>
-    <!-- Rockets Rewards - Front End -->
-    <div class="project-card">
-      <img src="https://d33wubrfki0l68.cloudfront.net/61097e5f3556310008534663/screenshot_2021-08-03-17-35-31-0000.png" alt="My Portfolio">
-      <div class="project-content">
-        <h2>My Portfolio</h2>
-        <p>I heard you like portfolios, so I put a portfolio in my portfolio. Used this an opportunity to try out implementing a theme switcher, which ended up being much more straightforward than I thought with CSS/SCSS variables. Have a look at the source code to see how it's done!</p>
-        <div class="project-links">
-          <a class="project-link" href="https://github.com/z-index-dev/portfolio" target="_blank" rel="noopener noreferrer">View Code</a>
+    <main id="projects" class="projects">
+      <div class="description">
+        <h1 class="lg-heading">Projects</h1>
+        <p>
+          I've built hundreds of webpages and applications over the course of my
+          career. Below are some that show the best of my abilities with HTML,
+          CSS, JavaScript, Node.js and modern databases. All of the front-end
+          demos, including this site, are deployed to Netlify.
+        </p>
+      </div>
+      <!-- Rockets Rewards - Front End -->
+      <div class="project-card">
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/61097e5f3556310008534663/screenshot_2021-08-03-17-35-31-0000.png"
+          alt="My Portfolio"
+        />
+        <div class="project-content">
+          <h2>My Portfolio</h2>
+          <p>
+            I heard you like portfolios, so I put a portfolio in my portfolio.
+            Used this an opportunity to try out implementing a theme switcher,
+            which ended up being much more straightforward than I thought with
+            CSS/SCSS variables. Have a look at the source code to see how it's
+            done!
+          </p>
+          <div class="project-links">
+            <a
+              class="project-link"
+              href="https://github.com/z-index-dev/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Code</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <div class="project-card">
-      <img src="./img/20210803-rewards-portfolio-thumb.jpg" alt="Rockets Rewards">
-      <div class="project-content">
-        <h2>Rockets Rewards</h2>
-        <p>Season Ticket Member Rewards redemption page built using HTML table, SCSS and Vanilla JS. Pulls account info via query string from REST API, which is fed from MongoDB through Node.js server hosted on Heroku. User then makes selections and submits to database pending server-side validation. Server also includes export function for viewing submissions and a "wake up" function so the server never lags. Project is currently live, but I'll share the server code when possible.</p>
-        <div class="project-links">
-          <a class="project-link" href="https://rockets-rewards.netlify.app/?id=60fc71b2a3bce5870dcce817" target="_blank" rel="noopener noreferrer" >View Demo</a>
-          <a class="project-link" href="https://github.com/z-index-dev/rockets-rewards">View Code</a>
+      <div class="project-card">
+        <img
+          src="./img/20210803-rewards-portfolio-thumb.jpg"
+          alt="Rockets Rewards"
+        />
+        <div class="project-content">
+          <h2>Rockets Rewards</h2>
+          <p>
+            Season Ticket Member Rewards redemption page built using HTML table,
+            SCSS and Vanilla JS. Pulls account info via query string from REST
+            API, which is fed from MongoDB through Node.js server hosted on
+            Heroku. User then makes selections and submits to database pending
+            server-side validation. Server also includes export function for
+            viewing submissions and a "wake up" function so the server never
+            lags. Project is currently live, but I'll share the server code when
+            possible.
+          </p>
+          <div class="project-links">
+            <a
+              class="project-link"
+              href="https://rockets-rewards.netlify.app/?id=60fc71b2a3bce5870dcce817"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Demo</a
+            >
+            <a
+              class="project-link"
+              href="https://github.com/z-index-dev/rockets-rewards"
+              >View Code</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Pomodoro App -->
-    <div class="project-card">
-      <img src="https://d33wubrfki0l68.cloudfront.net/61004cb310638800e51f6d08/screenshot_2021-07-27-18-13-13-0000.png" alt="Pomodoro App">
-      <div class="project-content">
-        <h2>Pomodoro App</h2>
-        <p>Pomodoro timer with to-do list built with HTML, CSS and Vanilla JS, most notably using the setInterval and clearInterval methods, event bubbling and localStorage. If you like it, feel free to use it to keep you focused at work!</p>
-        <div class="project-links">
-          <a class="project-link" href="https://z-index-pomodoro.netlify.app/" target="_blank" rel="noopener noreferrer">View Demo</a>
-          <a class="project-link" href="https://github.com/z-index-dev/pomodoro-app" target="_blank" rel="noopener noreferrer">View Code</a>
+      <!-- Pomodoro App -->
+      <div class="project-card">
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/61004cb310638800e51f6d08/screenshot_2021-07-27-18-13-13-0000.png"
+          alt="Pomodoro App"
+        />
+        <div class="project-content">
+          <h2>Pomodoro App</h2>
+          <p>
+            Pomodoro timer with to-do list built with HTML, CSS and Vanilla JS,
+            most notably using the setInterval and clearInterval methods, event
+            bubbling and localStorage. If you like it, feel free to use it to
+            keep you focused at work!
+          </p>
+          <div class="project-links">
+            <a
+              class="project-link"
+              href="https://z-index-pomodoro.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Demo</a
+            >
+            <a
+              class="project-link"
+              href="https://github.com/z-index-dev/pomodoro-app"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Code</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Video Player -->
-    <div class="project-card">
-      <img src="https://d33wubrfki0l68.cloudfront.net/6101acb52a291f0007ff8179/screenshot_2021-07-28-19-15-08-0000.png" alt="Custom Video Player">
-      <div class="project-content">
-        <h2>Custom Video Player</h2>
-        <p>HTML, CSS and Vanilla JS video player with scrubbing, time updates, time tooltips on hover and fullscreen capability. I initially built this as part of Wes Bos' JavaSript30 course then added the time tracker and tooltips with a timeString regex.</p>
-        <div class="project-links">
-          <a class="project-link" href="https://z-index-video-player.netlify.app/" target="_blank" rel="noopener noreferrer">View Demo</a>
-          <a class="project-link" href="https://github.com/z-index-dev/custom-video-player" target="_blank" rel="noopener noreferrer">View Code</a>
+      <!-- Video Player -->
+      <div class="project-card">
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/6101acb52a291f0007ff8179/screenshot_2021-07-28-19-15-08-0000.png"
+          alt="Custom Video Player"
+        />
+        <div class="project-content">
+          <h2>Custom Video Player</h2>
+          <p>
+            HTML, CSS and Vanilla JS video player with scrubbing, time updates,
+            time tooltips on hover and fullscreen capability. I initially built
+            this as part of Wes Bos' JavaSript30 course then added the time
+            tracker and tooltips with a timeString regex.
+          </p>
+          <div class="project-links">
+            <a
+              class="project-link"
+              href="https://z-index-video-player.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Demo</a
+            >
+            <a
+              class="project-link"
+              href="https://github.com/z-index-dev/custom-video-player"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Code</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-  <div class="skewed"></div>
-  <footer id="main-footer">
-    Copyright &copy; Z-Index Web Services, LLC 2022
-  </footer>
+    </main>
+    <div class="skewed"></div>
+    <footer id="main-footer">
+      <!-- Copyright &copy; Z-Index Web Services, LLC 2022 -->
+    </footer>
 
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

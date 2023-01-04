@@ -1,107 +1,139 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zach Shelton | Portfolio</title>
-  <link rel="shortcut icon" href="./img/z-index-logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-</head>
-<body>
-  <header>
-    <nav class="menu">
-      <ul class="menu-nav">
-        <li class="nav-item current">
-          <a href="index.html" class="nav-link">
-            Home
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="projects.html" class="nav-link">
-            Projects
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            Contact
-          </a>
-        </li>
-        <li class="nav-item theme-cog">
-          <i class="fas fa-cog"></i>
-        </li>
-      </ul>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zach Shelton | Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="./img/z-index-logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul class="menu-nav">
+          <li class="nav-item current">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link"> Projects </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"> Contact </a>
+          </li>
+          <li class="nav-item theme-cog">
+            <i class="fas fa-cog"></i>
+          </li>
+        </ul>
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
+      </nav>
+      <div class="scroll-prompt js-scroll fade-in-bottom">
+        <i class="fas fa-angle-double-down"></i>
+        Scroll
       </div>
-    </nav>
-    <div class="scroll-prompt js-scroll fade-in-bottom">
-      <i class="fas fa-angle-double-down"></i>
-      Scroll
-    </div>
-    <div class="theme-menu">
-      <button class="theme-select dark" aria-label="Set dark theme">Dark</button>
-      <button class="theme-select light" aria-label="Set light theme">Light</button>
-      <button class="theme-select fun" aria-label="Set fun theme">Fun</button>
-    </div>
-  </header>
+      <div class="theme-menu">
+        <button class="theme-select dark" aria-label="Set dark theme">
+          Dark
+        </button>
+        <button class="theme-select light" aria-label="Set light theme">
+          Light
+        </button>
+        <button class="theme-select fun" aria-label="Set fun theme">Fun</button>
+      </div>
+    </header>
 
-  <main id="home" class="home">
-    <div class="home-portrait">
-      <img src="img/portrait.jpg" alt="Zach Shelton">
-    </div>
-    <div class="home-content">
-      <h1 class="lg-heading">Zach <span class="text-secondary">Shelton</span></h1>
-      <h2 class="sm-heading">Self-taught web developer &amp; designer &bull; Houston, TX</h2>
+    <main id="home" class="home">
+      <div class="home-portrait">
+        <img src="img/portrait.jpg" alt="Zach Shelton" />
+      </div>
+      <div class="home-content">
+        <h1 class="lg-heading">
+          Zach <span class="text-secondary">Shelton</span>
+        </h1>
+        <h2 class="sm-heading">
+          Self-taught web developer &amp; designer &bull; Houston, TX
+        </h2>
+        <div class="icons">
+          <a href="#" title="Github">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="#" title="Twitter">
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="#" title="LinkedIn">
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </main>
+    <div class="skewed"></div>
+    <article class="about">
+      <h2 class="about-heading">Hi! My name is Zach Shelton</h2>
+      <p class="about-text">
+        I'm a self-taught, full-stack developer using HTML, CSS, JavaScript and
+        Node.js to build responsive websites and applications.
+      </p>
+      <p class="about-text">
+        I am currently a Frontend Developer for Octopus Energy 🐙, a clean
+        energy tech company that just came to United States from the United
+        Kingdom. I started there in February 2022 after spending two years as
+        the Digital Development Manager at the Houston Rockets 🚀🏀.
+      </p>
+      <p class="about-text">
+        My current stack is pretty React-focused now that I'm working on a
+        large-scale production app. I specifically work with Next.js, Material
+        UI, Apollo, Cypress and Turborepo, which I'm particularly excited about
+        these days.
+      </p>
+      <p class="about-text">
+        I'm always looking for a new challenge or project, so feel free to hit
+        me up on one the platforms below or just fill out my
+        <a href="contact.html">contact form</a>!
+      </p>
       <div class="icons">
-        <a href="#" title="Github">
+        <a
+          href="https://github.com/z-index-dev"
+          title="Github"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i class="fab fa-github fa-2x" aria-hidden="true"></i>
         </a>
-        <a href="#" title="Twitter">
+        <a
+          href="https://twitter.com/zachisaginger"
+          title="Twitter"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
         </a>
-        <a href="#" title="LinkedIn">
+        <a
+          href="https://www.linkedin.com/in/zach-shelton-b1770b56/"
+          title="LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
         </a>
       </div>
-    </div>
-  </main>
-  <div class="skewed"></div>
-  <article class="about">
-    <h2 class="about-heading">Hi! My name is Zach Shelton</h2>
-    <p class="about-text">I'm a self-taught, full-stack developer using HTML, CSS, JavaScript and Node.js to build responsive websites and applications.</p>
-    <p class="about-text">I am currently the Digital Development Manager for the Houston Rockets 🚀🏀, handling all development and design of Rockets.com, the Rockets App and RocketsShop.com. I've worked there for over eight years now, drawing on my background in professional writing, event management and graphic design to deliver a high-end experience to our fans.</p>
-    <p class="about-text">I'm always looking for a new challenge or project, so feel free to hit me up on one the platforms below or just fill out my <a href="contact.html">contact form</a>!</p>
-    <div class="icons">
-      <a href="#" title="Github">
-        <i class="fab fa-github fa-2x" aria-hidden="true"></i>
-      </a>
-      <a href="#" title="Twitter">
-        <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
-      </a>
-      <a href="#" title="LinkedIn">
-        <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
-      </a>
-    </div>
-  </article>
-  <footer id="main-footer">
-    Copyright &copy; Z-Index Web Services, LLC 2022
-  </footer>
+    </article>
+    <footer id="main-footer">
+      <!-- Copyright &copy; Z-Index Web Services, LLC 2022 -->
+    </footer>
 
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
